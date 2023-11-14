@@ -12,43 +12,67 @@
         xmlns:local="clr-namespace:_2048"
         mc:Ignorable="d"
         Title="2048" Height="450" Width="439">
-    <Grid>
+    <Grid Background="Blue">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBlock Text="Score: " Margin="10"/>
-            <TextBlock Text="0" Margin="10"/>
-            <TextBlock Text="High Score: " Margin="10"/>
-            <TextBlock Text="0" Margin="10"/>
-        </StackPanel>
-        <Grid Grid.Row="1">
-            <Grid.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="Width" Value="70"/>
-                    <Setter Property="Height" Value="70"/>
-                    <Setter Property="Margin" Value="10"/>
-                    <Setter Property="Background" Value="LightGray"/>
-                    <Setter Property="BorderBrush" Value="Black"/>
-                    <Setter Property="BorderThickness" Value="2"/>
-                </Style>
-            </Grid.Resources>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Border Grid.Row="0" Grid.Column="0">
-                <TextBlock Text="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
-            </Border>
-        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Name="row0col0_wrap" Grid.Column="0" HorizontalAlignment="Center" Margin="3" Grid.Row="0" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row0col0_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row0col1_wrap" Grid.Column="1" HorizontalAlignment="Center" Margin="3" Grid.Row="0" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row0col1_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row0col2_wrap" Grid.Column="2" HorizontalAlignment="Center" Margin="3" Grid.Row="0" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row0col2_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row0col3_wrap" Grid.Column="3" HorizontalAlignment="Center" Margin="3" Grid.Row="0" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row0col3_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row1col0_wrap" Grid.Column="0" HorizontalAlignment="Center" Margin="3" Grid.Row="1" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row1col0_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row1col1_wrap" Grid.Column="1" HorizontalAlignment="Center" Margin="3" Grid.Row="1" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row1col1_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row1col2_wrap" Grid.Column="2" HorizontalAlignment="Center" Margin="3" Grid.Row="1" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row1col2_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row1col3_wrap" Grid.Column="3" HorizontalAlignment="Center" Margin="3" Grid.Row="1" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row1col3_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row2col0_wrap" Grid.Column="0" HorizontalAlignment="Center" Margin="3" Grid.Row="2" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row2col0_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row2col1_wrap" Grid.Column="1" HorizontalAlignment="Center" Margin="3" Grid.Row="2" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row2col1_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row2col2_wrap" Grid.Column="2" HorizontalAlignment="Center" Margin="3" Grid.Row="2" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row2col2_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row2col3_wrap" Grid.Column="3" HorizontalAlignment="Center" Margin="3" Grid.Row="2" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row2col3_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row3col0_wrap" Grid.Column="0" HorizontalAlignment="Center" Margin="3" Grid.Row="3" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row3col0_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row3col1_wrap" Grid.Column="1" HorizontalAlignment="Center" Margin="3" Grid.Row="3" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row3col1_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row3col2_wrap" Grid.Column="2" HorizontalAlignment="Center" Margin="3" Grid.Row="3" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row3col2_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
+        <WrapPanel Name="row3col3_wrap" Grid.Column="3" HorizontalAlignment="Center" Margin="3" Grid.Row="3" VerticalAlignment="Center" Background="Aqua" Width="110" Height="110">
+            <Label Name="row3col3_lab" Height="110" Width="110" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content=""/>
+        </WrapPanel>
     </Grid>
 </Window>
